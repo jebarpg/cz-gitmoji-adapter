@@ -39,6 +39,38 @@ async function getConfig() {
     (await loadConfigUpwards('package.json')) ||
     (await loadConfigUpwards('.czrc')) ||
     (await loadConfig(path.join(homedir(), '.czrc'))) ||
+    (await loadConfigUpwards('.czrc.js')) ||
+    (await loadConfig(path.join(homedir(), '.czrc.js'))) ||
+    (await loadConfigUpwards('.czrc.cjs')) ||
+    (await loadConfig(path.join(homedir(), '.czrc.cjs'))) ||
+    (await loadConfigUpwards('.czrc.mjs')) ||
+    (await loadConfig(path.join(homedir(), '.czrc.mjs'))) ||
+    (await loadConfigUpwards('.czrc.ts')) ||
+    (await loadConfig(path.join(homedir(), '.czrc.ts'))) ||
+    (await loadConfigUpwards('.czrc.cts')) ||
+    (await loadConfig(path.join(homedir(), '.czrc.cts'))) ||
+    (await loadConfigUpwards('.czrc.json')) ||
+    (await loadConfig(path.join(homedir(), '.czrc.json'))) ||
+    (await loadConfigUpwards('.czrc.yml')) ||
+    (await loadConfig(path.join(homedir(), '.czrc.yml'))) ||
+    (await loadConfigUpwards('.czrc.yaml')) ||
+    (await loadConfig(path.join(homedir(), '.czrc.yaml'))) ||
+    (await loadConfigUpwards('.cz.config.js')) ||
+    (await loadConfig(path.join(homedir(), '.cz.config.js'))) ||
+    (await loadConfigUpwards('.cz.config.cjs')) ||
+    (await loadConfig(path.join(homedir(), '.cz.config.cjs'))) ||
+    (await loadConfigUpwards('.cz.config.mjs')) ||
+    (await loadConfig(path.join(homedir(), '.cz.config.mjs'))) ||
+    (await loadConfigUpwards('.cz.config.ts')) ||
+    (await loadConfig(path.join(homedir(), '.cz.config.ts'))) ||
+    (await loadConfigUpwards('.cz.config.cts')) ||
+    (await loadConfig(path.join(homedir(), '.cz.config.cts'))) ||
+    (await loadConfigUpwards('.cz.config.json')) ||
+    (await loadConfig(path.join(homedir(), '.cz.config.json'))) ||
+    (await loadConfigUpwards('.cz.config.yml')) ||
+    (await loadConfig(path.join(homedir(), '.cz.config.yml'))) ||
+    (await loadConfigUpwards('.cz.config.yaml')) ||
+    (await loadConfig(path.join(homedir(), '.cz.config.yaml'))) ||
     {}
 
   const config = {
