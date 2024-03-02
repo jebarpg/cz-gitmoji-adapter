@@ -36,7 +36,45 @@ async function getConfig() {
   }
 
   const loadedConfig =
+    //check for config files locations in this order package.json > project directory > home directory
     (await loadConfigUpwards('package.json')) ||
+    //check project directory for config files
+    (await loadConfigUpwards('.czrc')) ||
+    (await loadConfig(path.join(process.cwd(), '.czrc'))) ||
+    (await loadConfigUpwards('.czrc.js')) ||
+    (await loadConfig(path.join(process.cwd(), '.czrc.js'))) ||
+    (await loadConfigUpwards('.czrc.cjs')) ||
+    (await loadConfig(path.join(process.cwd(), '.czrc.cjs'))) ||
+    (await loadConfigUpwards('.czrc.mjs')) ||
+    (await loadConfig(path.join(process.cwd(), '.czrc.mjs'))) ||
+    (await loadConfigUpwards('.czrc.ts')) ||
+    (await loadConfig(path.join(process.cwd(), '.czrc.ts'))) ||
+    (await loadConfigUpwards('.czrc.cts')) ||
+    (await loadConfig(path.join(process.cwd(), '.czrc.cts'))) ||
+    (await loadConfigUpwards('.czrc.json')) ||
+    (await loadConfig(path.join(process.cwd(), '.czrc.json'))) ||
+    (await loadConfigUpwards('.czrc.yml')) ||
+    (await loadConfig(path.join(process.cwd(), '.czrc.yml'))) ||
+    (await loadConfigUpwards('.czrc.yaml')) ||
+    (await loadConfig(path.join(process.cwd(), '.czrc.yaml'))) ||
+    (await loadConfigUpwards('.cz.config.js')) ||
+    (await loadConfig(path.join(process.cwd(), '.cz.config.js'))) ||
+    (await loadConfigUpwards('.cz.config.cjs')) ||
+    (await loadConfig(path.join(process.cwd(), '.cz.config.cjs'))) ||
+    (await loadConfigUpwards('.cz.config.mjs')) ||
+    (await loadConfig(path.join(process.cwd(), '.cz.config.mjs'))) ||
+    (await loadConfigUpwards('.cz.config.ts')) ||
+    (await loadConfig(path.join(process.cwd(), '.cz.config.ts'))) ||
+    (await loadConfigUpwards('.cz.config.cts')) ||
+    (await loadConfig(path.join(process.cwd(), '.cz.config.cts'))) ||
+    (await loadConfigUpwards('.cz.config.json')) ||
+    (await loadConfig(path.join(process.cwd(), '.cz.config.json'))) ||
+    (await loadConfigUpwards('.cz.config.yml')) ||
+    (await loadConfig(path.join(process.cwd(), '.cz.config.yml'))) ||
+    (await loadConfigUpwards('.cz.config.yaml')) ||
+    (await loadConfig(path.join(process.cwd(), '.cz.config.yaml'))) ||
+
+    //check home directory ~/ for config files
     (await loadConfigUpwards('.czrc')) ||
     (await loadConfig(path.join(homedir(), '.czrc'))) ||
     (await loadConfigUpwards('.czrc.js')) ||
