@@ -72,36 +72,6 @@
     "name": "security"
   },
   {
-    "emoji": "🍎",
-    "code": ":apple:",
-    "description": "Fixing something on macOS.",
-    "name": "osx"
-  },
-  {
-    "emoji": "🐧",
-    "code": ":penguin:",
-    "description": "Fixing something on Linux.",
-    "name": "linux"
-  },
-  {
-    "emoji": "🏁",
-    "code": ":checkered_flag:",
-    "description": "Fixing something on Windows.",
-    "name": "windows"
-  },
-  {
-    "emoji": "🤖",
-    "code": ":robot:",
-    "description": "Fixing something on Android.",
-    "name": "android"
-  },
-  {
-    "emoji": "🍏",
-    "code": ":green_apple:",
-    "description": "Fixing something on iOS.",
-    "name": "ios"
-  },
-  {
     "emoji": "🔖",
     "code": ":bookmark:",
     "description": "Releasing / Version tags.",
@@ -160,12 +130,6 @@
     "code": ":recycle:",
     "description": "Refactoring code.",
     "name": "refactoring"
-  },
-  {
-    "emoji": "🐳",
-    "code": ":whale:",
-    "description": "Work about Docker.",
-    "name": "docker"
   },
   {
     "emoji": "➕",
@@ -250,12 +214,6 @@
     "code": ":bento:",
     "description": "Adding or updating assets.",
     "name": "assets"
-  },
-  {
-    "emoji": "👌",
-    "code": ":ok_hand:",
-    "description": "Updating code due to code review changes.",
-    "name": "review"
   },
   {
     "emoji": "♿️",
@@ -358,12 +316,6 @@
     "code": ":mag:",
     "description": "Improving SEO.",
     "name": "seo"
-  },
-  {
-    "emoji": "☸️",
-    "code": ":wheel_of_dharma:",
-    "description": "Work about Kubernetes.",
-    "name": "k8s"
   },
   {
     "emoji": "🏷️",
