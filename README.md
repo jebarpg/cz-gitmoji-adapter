@@ -179,7 +179,7 @@ import {
 
 export default {
     extends: ['gitmoji'],
-    parserPreset: '@gitmoji/parser-opts',
+    parserPreset: 'gitmoji-parser-opts',
     rules: {
         'body-leading-blank': [RuleConfigSeverity.Warning, 'always'] as const,
         'body-max-line-length': [RuleConfigSeverity.Error, 'always', 100] as const,
